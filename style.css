@@ -253,5 +253,139 @@ h4{
 .portfolio-item:hover img{
     transform: scale(1.1);
 }
+/*PORTFOLİO FINISH*/
 
-/* DISCOVER START*/
+/* CONTACT START*/
+
+.contact{
+    padding: 10px 0;
+}
+
+.contact h2{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: #5b2a20;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.contact h2::after{
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #5b2a20;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.contact-content{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-item{
+    display: flex;
+    align-items: center;
+    flex: 33%;
+    margin-bottom: 100px;
+    flex-direction: column;
+}
+
+.contact-item i{
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: #5b2a20;
+}
+
+.contact-item p{
+    font-size: 14px;
+    line-height: 33px;
+}
+/* CONTACT FINISH*/
+
+/* FOOTER START*/
+.footer h2{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: #5b2a20;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 55px 0;
+}
+
+.footer h2::after{
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #5b2a20;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.footer{
+    background-color: black;
+}
+
+.footer-copyright{
+    color: white;
+    text-align: center;
+    flex-basis: 55%;
+    line-height: 2;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-social i{
+    color: white;
+    margin-bottom: 50px;
+    font-size: 25px;
+    padding: 0 45px;
+}
+
+.footer-social:first-child{
+    margin-left: 70px;
+}
+
+#menu-icon{
+    font-size: 25px;
+    display: none;
+    margin-left: 20px;
+}
+
+@media only screen and (max-width:800px){
+    .header-menu ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top:100px;
+        left: 0;
+        background-color: rgba(96, 72, 36, 0.94);
+        width: 100%;
+    }
+    .header-menu ul li{
+        margin-right: 50px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .header-menu ul li a{
+        color: white;
+    }
+    .header-menu #menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
