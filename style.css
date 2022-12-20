@@ -8,7 +8,6 @@
     padding: 0;
     box-sizing: border-box;
     border: 0;
-    font-family: 'Poppins', sans-serif;
 }
 
 a,
@@ -170,6 +169,7 @@ h3{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .about-img{
@@ -347,6 +347,10 @@ h4{
     flex-direction: column;
 }
 
+.footer-social{
+    margin-left: 600px;
+}
+
 .footer-social i{
     color: white;
     margin-bottom: 50px;
@@ -355,8 +359,9 @@ h4{
 }
 
 .footer-social:first-child{
-    margin-left: 70px;
+    margin-left: 300px;
 }
+/* FOOTER FINISH*/
 
 #menu-icon{
     font-size: 25px;
@@ -364,6 +369,7 @@ h4{
     margin-left: 20px;
 }
 
+/*MENU START*/
 @media only screen and (max-width:800px){
     .header-menu ul{
         display: flex;
@@ -375,6 +381,8 @@ h4{
         left: 0;
         background-color: rgba(96, 72, 36, 0.94);
         width: 100%;
+        overflow: hidden;
+        transition: max-height .5s;
     }
     .header-menu ul li{
         margin-right: 50px;
@@ -389,3 +397,45 @@ h4{
         cursor: pointer;
     }
 }
+/*MENU FINISH*/
+
+/*ABOUT START*/
+@media only screen and (max-width:990px){
+    .about-img{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .about-text{
+        width: 100%;
+    }
+}
+
+/*ABOUT FINISH*/
+
+/*PORTFOLIO START*/
+@media only screen and (max-width:990px){
+    .portfolio .portfolio-item{
+        flex-basis: 50%;
+    }
+}
+@media only screen and (max-width:580px){
+    .portfolio .portfolio-item{
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .contact-content{
+        flex-direction: column;
+    }
+    .contact-item{
+        margin-top: 30px;
+    }
+    .contact-item p{
+        width: 100%;
+        text-align: center;
+    }
+}
+/*PORTFOLIO FINISH*/
+
